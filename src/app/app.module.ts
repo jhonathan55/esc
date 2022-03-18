@@ -8,11 +8,15 @@ import { HeaderComponent } from './shared/header/header.component';
 import { MaterialModule } from './module/material/material.module';
 import { HomeModule } from './home/home.module';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ArancelesComponent } from './pages/aranceles/aranceles.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
+    ArancelesComponent,
+   
    
    
   ],
@@ -22,6 +26,9 @@ import { FooterComponent } from './shared/footer/footer.component';
     BrowserAnimationsModule,
     MaterialModule,
     HomeModule
+  ],
+  exports:[
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

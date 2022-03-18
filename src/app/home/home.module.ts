@@ -4,10 +4,12 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { MaterialModule } from '../module/material/material.module';
-
+import { SomosComponent } from '../pages/somos/somos.component';
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    SomosComponent
+  
   ],
   imports: [
     CommonModule,
@@ -15,7 +17,8 @@ import { MaterialModule } from '../module/material/material.module';
     MaterialModule
   ],
   exports:[
-    HomeComponent
+    HomeComponent,
+    SomosComponent
   ]
 })
 export class HomeModule { }

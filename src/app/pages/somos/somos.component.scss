@@ -1,0 +1,74 @@
+.separador {
+    width: auto;
+    height: auto;
+    background-image: url(../../../assets/1.jpg);
+    background-position: center;
+    /*centra la imagen*/
+    background-size: cover;
+    /**/
+    background-attachment: fixed;
+    //margin-bottom: 60px;
+}
+
+.separador p {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 18px;
+    /*tamaño de letra*/
+    font-family: "Noto Serif", serif;
+    //padding: 10px;
+    color: rgb(255, 255, 255);
+    /*color de letra en fondo*/
+    // text-transform: uppercase;
+    /*trasforma las letras a mayusc*/
+}
+
+.card-group {
+    opacity: 0.8;
+    margin: 2rem;
+    display: grid;//utilizo frip
+    grid-template-columns: 1fr 1fr;//defino 2 fragmentos
+    grid-template-rows: repeat(1, auto 1fr auto);
+    gap: 10px;//espaciado
+
+    .card {
+        margin: 1rem;
+        
+        // display: flex;
+        // flex-wrap: wrap; /*permite ocupar toda la pantalla*/
+        //text-align: center;
+        background-color: transparent;
+        height: min-content;
+        
+        .card-body {
+            border: 2px solid red;
+            background: rgb(4, 0, 26);
+           // padding: 10px;
+            border-radius: 25px;
+            .card-title{
+                font-size: 23px;
+                font-weight: bold;
+            }
+            .logo {
+                background: #fff;
+            }
+            .manual{
+                margin: 1.1rem;
+               max-width: 200px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 495px) {
+    .separador{
+        width: auto;
+        height: auto;
+    }
+    .card-group{
+        grid-template-columns: 1fr;//defino 2 fragmentos
+    }
+}

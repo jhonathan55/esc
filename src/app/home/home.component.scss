@@ -27,24 +27,37 @@
   text-align: center;
   justify-content: center;
   position: relative;
+  box-shadow: 2px 2px 5px #999;
+  margin: 2rem;
   .title {
     font-size: xx-large;
     font-weight: bold;
   }
 }
-
 .card-group {
-  //display: grid;
+  margin: 2rem;
   gap: 20px;
+  height: auto;
   .card {
+    height: auto;
     display: flex;
     flex-wrap: wrap; /*permite ocupar toda la pantalla*/
     text-align: center;
+    box-shadow: 2px 2px 5px #999;
     .card-img-top {
+      height: auto;
       width: 70px;
       height: 70px;
       margin: 10px auto;
       display: block;
+    }
+    .card-body{
+      height: auto;
+      .card-title{
+        height: auto;
+        font-weight: bold;
+        font-size: 17px;
+      }
     }
   }
 }
