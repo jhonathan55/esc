@@ -33,3 +33,18 @@
   }
 }
 
+.card-group {
+  //display: grid;
+  gap: 20px;
+  .card {
+    display: flex;
+    flex-wrap: wrap; /*permite ocupar toda la pantalla*/
+    text-align: center;
+    .card-img-top {
+      width: 70px;
+      height: 70px;
+      margin: 10px auto;
+      display: block;
+    }
+  }
+}
