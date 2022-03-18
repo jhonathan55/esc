@@ -1,0 +1,35 @@
+.carousel-item {
+  height: 32rem;
+  background: rgb(4, 35, 82);
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+.container {
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  right: 0;
+  padding-bottom: 50px;
+}
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+}
+.card2 {
+  display: flex;
+  flex-wrap: wrap; /*permite ocupar toda la pantalla*/
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  .title {
+    font-size: xx-large;
+    font-weight: bold;
+  }
+}
+

@@ -1,2 +1,32 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side">
+        <mat-toolbar color="primary">
+            Menu
+        </mat-toolbar>
+        <mat-nav-list>
+            <div fxLayout="row" fxLayoutAlign="center none">
+              <button mat-mini-fab (click)="sidenav.toggle()" color="warn">
+                <mat-icon>close</mat-icon>
+              </button>
+            </div>
+            <!-- <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a> -->
+            <a href="#" mat-list-item>Inicio</a>
+            <a href="#" mat-list-item>¿Quienes somos?</a>
+            <a href="#" mat-list-item>Aranceles</a>
+            <a href="#" mat-list-item>Preguntas Frecuentes</a>
+            <a href="#" mat-list-item>Noticias</a>
+            <a href="#" mat-list-item>Contacto</a>
+          </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-header (toggleSidenav)="sidenav.toggle()"></app-header>
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+
+
+

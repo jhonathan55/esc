@@ -13,8 +13,10 @@ import {MatTableModule} from '@angular/material/table';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatListModule} from '@angular/material/list';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 //flex layout npm i @angular/flex-layout
 import { FlexLayoutModule } from '@angular/flex-layout';
+
 const Material = [
   MatToolbarModule,
   MatIconModule,
@@ -29,7 +31,8 @@ const Material = [
   MatDialogModule,
   MatPaginatorModule,
   MatListModule,
-  FlexLayoutModule
+  FlexLayoutModule,
+  MatProgressBarModule
 ];
 @NgModule({
   declarations: [
