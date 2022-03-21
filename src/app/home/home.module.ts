@@ -5,10 +5,12 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { MaterialModule } from '../module/material/material.module';
 import { SomosComponent } from '../pages/somos/somos.component';
+import { ArancelesComponent } from '../pages/aranceles/aranceles.component';
 @NgModule({
   declarations: [
     HomeComponent,
-    SomosComponent
+    SomosComponent,
+    ArancelesComponent
   
   ],
   imports: [
@@ -18,7 +20,8 @@ import { SomosComponent } from '../pages/somos/somos.component';
   ],
   exports:[
     HomeComponent,
-    SomosComponent
+    SomosComponent,
+    ArancelesComponent
   ]
 })
 export class HomeModule { }

@@ -30,7 +30,7 @@
 .card-group {
     opacity: 0.8;
     margin: 2rem;
-    display: grid;//utilizo frip
+    display: grid;//utilizo grip
     grid-template-columns: 1fr 1fr;//defino 2 fragmentos
     grid-template-rows: repeat(1, auto 1fr auto);
     gap: 10px;//espaciado

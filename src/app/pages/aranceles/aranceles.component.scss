@@ -1,0 +1,44 @@
+.title {
+    text-align: center;
+    font-size: 3rem;
+    color: aliceblue;
+}
+.container-fluig {
+    background-color: #001530;
+    padding: 2rem;
+}
+.container {
+    display: grid; //utilizamos grip
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(15rem, 1fr)
+    ); //con el metodo repeat definimos el fragmento, con el metodo auto fill auto rellenamos, y con el metodo minmax definimos el ancho min y max de nuestra card
+    gap: 10px; //espaciado entre card
+    text-align: center;
+    .card {
+        box-shadow: 2px 2px 5px #999;
+        .title-card {
+            color: #3f51b5;
+        }
+    }
+    p {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .title{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .title{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .title{
+        font-size: 2rem;
+    }
+}
