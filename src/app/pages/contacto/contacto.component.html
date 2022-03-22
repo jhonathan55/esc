@@ -1,5 +1,90 @@
 <div class="container-fluig">
     <div class="container">
-        
+        <mat-card class="card">
+            <mat-card-header class="d-flex justify-content-center">
+                <mat-card-title>¿DONDE ESTAMOS?</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>
+                    <button mat-icon-button>
+                        <mat-icon>whatsapp</mat-icon>
+                    </button>+56224749259 – +56955115283
+
+                    <button mat-icon-button>
+                        <mat-icon>place</mat-icon>
+                    </button>Av. Concha y Toro 2271, Puente Alto, a pasos del Metro Protectora de la Infancia
+                </p>
+                <p>
+                    <button mat-icon-button>
+                        <mat-icon>schedule</mat-icon>
+                    </button> Lun – Vi: 9:00 – 18:30
+                    Sab- 09:00 – 16:00
+                    <button mat-icon-button>
+                        <mat-icon>email</mat-icon>
+                    </button> escueladeconductores@gmail.com
+                </p>
+            </mat-card-content>
+        </mat-card>
+
+    </div>
+    <div class="container">
+        <mat-card class="card">
+            <mat-card-title>CONTÁCTANOS</mat-card-title>
+            <mat-card-content>
+                <form [formGroup]="contacto" class="frm">
+                    <mat-form-field appearance="outline" color="primary">
+                        <mat-label>Nombre</mat-label>
+                        <input matInput placeholder="Michael Jordan" formControlName="firstname" type="text" required
+                            [class]="isValidField('firstname')">
+                        <mat-error *ngIf="contacto.get('firstname')?.errors">
+                            Nombre es requerido
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" color="primary">
+                        <mat-label>Apellido</mat-label>
+                        <input matInput placeholder="Soto Guzman" formControlName="lastname" type="text" required
+                            [class]="isValidField('lastname')">
+                        <mat-error *ngIf="contacto.get('lastname')?.errors">
+                            Apellido es requerido
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" color="primary">
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder="pat@example.com" formControlName="email" type="text" required
+                            [class]="isValidField('email')">
+                        <!-- <mat-error *ngIf="contacto.get('email')?.errors">
+                            Email es requerido
+                        </mat-error> -->
+                        <mat-error *ngIf="contacto.get('email')?.errors">
+                            Email valido es requerido
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" color="primary">
+                        <mat-label>Celular</mat-label>
+                        <input matInput placeholder="987654321" formControlName="phone" type="text" required [class]="isValidField('phone')">
+                        <mat-error *ngIf="contacto.get('phone')?.errors">
+                            Celular de 9 digitos es requerido
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" color="primary">
+                        <mat-label>Asunto</mat-label>
+                        <input matInput placeholder="Precios de los cursos" formControlName="subject" type="text" required
+                            [class]="isValidField('subject')">
+                        <mat-error *ngIf="contacto.get('subject')?.errors">
+                            Asunto es requerido
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Mensaje</mat-label>
+                        <textarea matInput  placeholder="Información sobre..." formControlName="message" type="text" required
+                        [class]="isValidField('message')"></textarea>
+                        <mat-error *ngIf="contacto.get('message')?.errors">
+                            Mensaje es requerido
+                        </mat-error>
+                      </mat-form-field>
+                      <button mat-raised-button color="primary">Enviar</button>
+                </form>
+            </mat-card-content>
+        </mat-card>
     </div>
 </div>

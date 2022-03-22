@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ContactoRoutingModule } from './contacto-routing.module';
 import { ContactoComponent } from './contacto.component';
-
+import { MaterialModule } from 'src/app/module/material/material.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,8 @@ import { ContactoComponent } from './contacto.component';
   ],
   imports: [
     CommonModule,
-    ContactoRoutingModule
+    ContactoRoutingModule,
+    MaterialModule
   ]
 })
 export class ContactoModule { }
