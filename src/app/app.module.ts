@@ -14,10 +14,6 @@ import { FooterComponent } from './shared/footer/footer.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-  
-   
-   
-   
   ],
   imports: [
     BrowserModule,

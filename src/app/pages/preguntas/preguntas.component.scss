@@ -1,0 +1,32 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .container-fluig{
+    .title{
+      border-radius: 1rem;
+      opacity: 0.9;
+      background: rgb(4, 0, 26);
+      border: 2px solid red;
+
+    }
+    padding: 1rem;
+    background-image: url(../../../assets/1280.png);
+    color: aliceblue;
+   
+    .container{
+      opacity: 0.9;
+      color: aliceblue;
+      border-radius: 1rem;
+      
+      .accordion{
+        color: aliceblue;
+        
+        .panel{
+          //background-color: transparent;
+          background: rgb(4, 0, 26);
+          color: aliceblue;
+         
+        }
+      }
+    }
+  }
