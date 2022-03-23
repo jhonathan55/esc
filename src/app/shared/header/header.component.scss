@@ -1,23 +1,41 @@
-.toolbar1 {
-    background: rgb(4, 0, 26);
-    color: aliceblue;
-    font-size: 14px;
-    display: flex;
-    flex-wrap: wrap;//permite ocupar 100% de la pag.
+
+.toolbar{
     height: auto;
-}
-.toolbar2 {
-    font-size: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
+    display: grid;
+    //top toolbar
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    //end
+    .toolbar1 {
+        background: rgb(4, 0, 26);
+        color: aliceblue;
+        font-size: 14px;
+        //display: flex;
+        flex-wrap: wrap;//permite ocupar 100% de la pag.
+        height: auto;
+       //top
+    }
+    .toolbar2 {
+        background-color: aliceblue;
+        font-size: 15px;
+        flex-wrap: wrap;
+        height: auto;
+       //top bar
+    }
+
 }
 .menu button:hover {
+    
+    /*para trabajar con el menu o algun slider*/
     transform: translateY(2px);
     /*desplaza hacia abajo 18px*/
     background: rgb(4, 0, 26);
     /*color al posicionarme*/
     color: aliceblue;
+   
 }
 
 .example-spacer {
